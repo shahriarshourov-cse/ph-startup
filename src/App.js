@@ -12,7 +12,7 @@ function App() {
       <Person name={names[0]}></Person>
       <Person></Person>
       <Person></Person>
-      {/* <Info></Info> problem */}
+      <Info></Info>
     </div>
   );
 }
@@ -26,13 +26,13 @@ function Person(props) {
       <p>{props.name} FullStack Developer</p>
     </div>
   );
-  function Info() {
-    return (
-      <div className="info">
-        <h1>I am from Info Component</h1>
-      </div>
-    );
-  }
+}
+function Info() {
+  return (
+    <div className="info">
+      <h1>I am from Info Component</h1>
+    </div>
+  );
 }
 
 export default App;
